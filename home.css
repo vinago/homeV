@@ -1,0 +1,144 @@
+body {
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 800px;
+    -webkit-text-size-adjust: none;
+    background-color: silver;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+.picShow {
+    width: 630px;
+    height: 700px;
+    position: relative;
+    // background: pink;
+    // border: 1px solid blue;
+    margin: 160px auto;
+}
+.line1 {
+    position: absolute;
+    //border: 1px solid green;
+    //background: yellow;
+    visibility: hidden;
+}
+.box1, .box2, .box3 {
+    float: left;
+    //background: green;
+    // border: 1px solid black;
+    //  overflow: hidden;
+    visibility: hidden;
+}
+.box2, .box3 {
+    margin-left: 8px;
+}
+.layF, .layS, .layT, .special {
+    width: 200px;
+    height: 250px;
+    //border: 1px solid red;
+}
+.layF {
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    float: left;
+    background: silver;
+    overflow: hidden;
+    //visibility: hidden;
+}
+.layS {
+    tansform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    float: left;
+    background: green;
+    overflow: hidden;
+    visibility: hidden;
+}
+.layT {
+    tansform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    //float: left;
+    background: no-repeat center;
+    background-size: 200%;
+    // overflow: hidden;
+    visibility: visible;
+    //background: silver;
+}
+.overLay {
+    width: 200px;
+    height: 250px;
+    transition: all 300ms ease-in-out 50ms;
+}
+.overLay:hover {
+    background-color: black;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.layT:hover .overLay {
+    display: block;
+}
+.line2 {
+    left: 105px;
+    top: 182px;
+    position: absolute;
+    visibility: hidden;
+}
+.special {
+    overflow: hidden;
+    //position: absolute;
+}
+.overLay2 {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 1);
+    //display: none;
+    position: absolute;
+    top: -250px;
+    cursor: pointer;
+    overflow: visible;
+}
+.caption {
+    opacity: 100%;
+    position: absolute;
+    left: 50px;
+    //top:310px;
+    top: 70px;
+    font-family: Chinela Brush;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 3px 3px rgba(28, 41, 52, 0.6);
+    // border:1px solid purple;
+    float: left;
+}
+.diduan {
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 240px;
+    background: white;
+    opacity: 0.7;
+    //display: none;
+}
+.word {
+    font-family: Corbel;
+    font-size: 6px;
+    color: white;
+    position: absolute;
+    width: 300px;
+    float: left;
+    top: 150px;
+    left: -16px;
+    display: none;
+}
+.sline {
+    width: 180px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    float: left;
+    left: 27px;
+}
+.detail {
+    -webkit-transform: scale(0.75);
+}
